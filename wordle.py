@@ -8,7 +8,7 @@ class App(tk.Tk):
         self.title('WORDLE')
 
         # create widgets and variables
-        tags = ['wrong letters :', 'right letters :'] + ['possible loc of " " :' for _ in range(3)]
+        tags = ['wrong letters :', 'right letters :'] + ['ploc of " " :' for _ in range(3)]
         for index, tag in enumerate(tags):
             setattr(self, f'l{index}', tk.Label(self, text=tag))
             setattr(self, f'e{index}', tk.Entry(self))
